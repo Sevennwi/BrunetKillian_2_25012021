@@ -325,7 +325,7 @@ nav a {
 .art-asi{
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   max-width: 100%;
   justify-content: space-around;
   margin: 0px 40px 0px 40px;
