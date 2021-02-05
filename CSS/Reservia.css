@@ -211,8 +211,14 @@ button :hover {
 
 @media all and (max-width: 480px) {
 
+  .logo {
+    margin-left: 20px;
+  }
 
-/* En tête mobile */
+  #inscription {
+    right: 15%;
+    top: -40px;
+  }
 
   #heberg {
   border-top: none;
@@ -220,33 +226,32 @@ button :hover {
 
   .navbar-nav {
     justify-content: space-around;
-  margin: 10px 0px;
-  top: 0;
-  right: 0;
+    align-items: center;
+    margin: 10px 0px;
+    top: 0;
+    right: 0;
   }
 
 
-  .navbar-nav ::after {
+  .navbar ::after {
     position: absolute;
     content: "";
-    width: 120%;
+    width: 120.5%;
     height: 3px;
     top: 25px;
     left: 0;
-    background: linear-gradient(90deg, #0065FC 45%, lightgray 45%);
+    background: linear-gradient(90deg, #0065FC 50%, lightgray 50%);
   }
   
 
-/* En tête mobile */
-
   .Titre {
     font-size: 0.8em;
-    margin: 20px 0px 20px 35px;
-    width: 350px;
+    margin: 20px 0px 20px 20px;
+    max-width: 350px;
   }
 
   form {
-    margin-left: 35px;
+    margin-left: 15px;
   }
 
   input {
@@ -268,7 +273,7 @@ button :hover {
 
   .filtres {
     flex-wrap: wrap;
-    margin-left: 25px;
+    margin-left: 15px;
   }
 
   .filtres div {
@@ -282,16 +287,23 @@ button :hover {
 
   .border-logement {
     margin-left: 0px;
-    margin-right: 5px;
   }
 
   .icon-logement {
+    margin-left: 20px;
     width: 35px;
     height: 30px;
   }
 
 }
 
+
+@media all and (max-width: 400px) {
+
+  .navbar ::after {
+    width: 130%;
+  }
+}
 /* Media Queries */
 
 
