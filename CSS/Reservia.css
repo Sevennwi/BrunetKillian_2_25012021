@@ -12,49 +12,51 @@
   }
 
 /* Header */
-.logo-inscri {
+.logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0px;
-}
-
-.logo-inscri :hover {
-  opacity: 0.8;
-}
-
-.logo {
-  margin: 0px 40px;
+  margin: 20px 40px 0px;
   width: 150px;
 }
 
-.inscription {
-  text-align: right;
-  margin: 0px 50px 20px 0px;
-}
-
-.inscri {
-  margin: 0px 20px;
+#inscription {
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 5%;
   color: #0065FC;
-  text-decoration: none;
-} 
-
-.inscription :first-child {
-  border-top: 3.5px solid #0065FC;
-  padding-top: 8.8%;
-}
-
-.inscription :nth-child(2) {
-  color: black;
-}
-
-.inscription :nth-child(3) {
   font-weight: bold;
 }
 
-.logo-inscri-mobile {
-  display: none;
+.inscri{
+  text-decoration: none;
+  color: black;
+}
+
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  list-style-type: none;
+  margin: 0px 10px;
+  position: relative;
+  top: -50px;
+  right: 10%;
+}
+
+.nav-item-active {
+  margin: 0px 6%;
+  color: #0065FC;
+}
+
+#heberg {
+  color: #0065FC;
+  border-top: 3.5px solid #0065FC;
+  padding-top: 35%;
 }
 
 .Titre {
@@ -128,7 +130,7 @@ button :hover {
   display: none;
 }
 
-nav {
+.filtres {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -136,12 +138,12 @@ nav {
   font-weight: bold;
 }
 
-nav div {
+.filtres div {
   font-size: 1.25em;
   margin-right: 20px;
 }
 
-nav a {
+.filtres a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,13 +199,9 @@ nav a {
 /* Media Queries */
 
 @media all and (max-width: 1100px) {
-  nav {
+  .filtres {
     flex-wrap: wrap;
   }
-
-  .inscri {
-    margin: 20px 30px;
-  } 
 
 }
 
@@ -213,48 +211,27 @@ nav a {
 
 @media all and (max-width: 480px) {
 
-  .logo-inscri {
-    display: none;
-  }
 
 /* En tête mobile */
 
-  .logo-inscri-mobile {
-    display: flex;
-    flex-direction: column;
+  #heberg {
+  border-top: none;
   }
 
-  .inscription-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 40px 20px 0px;
-    color: #0065FC;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .ancre-mobile {
-    margin: 0% 2%;
-    padding-bottom: 10px;
-  } 
-
-  .ancre-mobile-a {
-    margin: 0px 40px;
-    text-decoration: none;
-    color: #0065FC;
+  .navbar-nav {
+    justify-content: space-around;
+  margin: 10px 0px;
+  top: 0;
+  right: 0;
   }
 
-  .ancre-mobile :last-child {
-    color: black;
-  }
 
-  .ancre-mobile ::after {
+  .navbar-nav ::after {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 120%;
     height: 3px;
-    top: 15%;
+    top: 25px;
     left: 0;
     background: linear-gradient(90deg, #0065FC 45%, lightgray 45%);
   }
@@ -289,17 +266,17 @@ nav a {
     display: block;
   }
 
-  nav {
+  .filtres {
     flex-wrap: wrap;
     margin-left: 25px;
   }
 
-  nav div {
+  .filtres div {
     width: 100%;
     margin-left: 15px;
   }
 
-  nav a {
+  .filtres a {
     margin: 10px 10px;
   }
 
