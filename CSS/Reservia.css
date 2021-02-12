@@ -509,7 +509,7 @@ button :hover {
 
 /* Media Queries */
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1700px) {
   .cards2 {
     padding: 10px 20px;
   }
